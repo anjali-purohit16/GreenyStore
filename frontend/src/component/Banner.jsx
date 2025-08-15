@@ -21,13 +21,13 @@ useEffect(() => {
 
   return (
     <>
-    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-8 mx-8">
+    <div className="max-w-screen-2xl container mx-auto md:px-20 px-4 flex flex-col md:flex-row my-8">
       <div className="order-2 md:order-1 w-full md:w-1/2 mt-10  md:mt-32">
       <div className ="space-y-9">
       <h1 className="text-4xl font-bold">“Plant the Future, One Leaf at a Time 🌿”</h1><br/>
       <span className = "text-3xl font-semibold  text-green-700">  Discover, nurture, and grow with our expert guides and eco-friendly plants.</span>
       <p className = "text-xl font-bold  text-red-600">
-        Hey there, plant lover! Welcome to <b className=" bg-white text-black dark:bg-slate-900 dark:text-white ">greenyStore .</b><br/>
+        Hey there, plant lover! Welcome to <b className=" bg-white text-black dark:bg-slate-900 dark:text-white ">Greeny.</b><br/>
        
         We're on a mission to bring nature closer to you — one plant at a time .
         <br/> <br/>

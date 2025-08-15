@@ -41,8 +41,8 @@ useEffect(() => {
   const navItems=(
     <>  
       <li><Link to="/">Home</Link></li>
-      <li><Link to='/store'>Store</Link></li>
-      <li><a>Blog</a></li>
+      <li><Link to='/store'>Blog</Link></li>
+      <li><a>Store</a></li>
       <li><a>Contact</a></li>
       <li><a>About</a></li>
     </>
@@ -76,7 +76,7 @@ useEffect(() => {
        {navItems}
       </ul>
     </div>
-    <a className=" text-4xl font-bold cursor-pointer">greenyStore</a>
+    <a className=" text-4xl font-bold cursor-pointer">Greeny</a>
   </div>
   <div className="navbar-end space-x-4">
   <div className="navbar-center hidden lg:flex">

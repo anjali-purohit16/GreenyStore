@@ -1,12 +1,26 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Cards from './Cards';  
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import list from '../data/list.json';
-
+//import list from '../data/list.json';
+import axios from "axios";
 function Blog() {
-  const filterData = list.filter((data) => data.category === 'blog');
+  const[greeny,setGreeny] = useState([]);
+  useEffect(()=>{
+    const getGreeny = async () => {
+      try{
+      const res= await axios.get("http://localhost:4001/greeny")
+      console.log(res.data.filter((data) => data.category === 'blog'))
+      setGreeny(res.data);
+    }
+    catch(error){
+      console.log(error)
+    }
+  };
+  getGreeny();
+  },[])
+  //const filterData = list.filter((data) => data.category === 'blog');
 
   const settings = {
     dots: true,
@@ -57,7 +71,7 @@ function Blog() {
         </div>
 
         <Slider {...settings}>
-          {filterData.map((item) => (
+          {greeny.map((item) => (
             <Cards item={item} key={item.id} />
           ))}
         </Slider>
